@@ -1,5 +1,5 @@
 
-# JuanaBin-PH 🇵🇭
+# JuanaBin-PH 
 Smart waste segregation system with IoT connectivity and solar-ready design for Philippine communities.
 
 JuanaBin is an affordable, solar-powered smart bin designed for barangays, schools, and condos in the Philippines to automate waste segregation.
