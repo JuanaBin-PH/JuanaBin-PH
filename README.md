@@ -26,4 +26,4 @@ JuanaBin is an affordable, solar-powered smart bin designed for barangays, schoo
 3. Configure WiFi credentials
 
 ### 🌏 For Philippine Communities
-Designed to support RA 9003 (Ecological Solid Waste Management Act)
+Designed to support RA 9003 (Ecological Solid Waste Management Act).
