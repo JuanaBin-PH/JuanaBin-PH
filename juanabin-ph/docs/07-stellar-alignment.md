@@ -6,7 +6,7 @@ source_pages: [18, 19]
 
 # 07 — Stellar Alignment Statement
 
-## PASTE-READY BLOCK — STELLAR / SCF ALIGNMENT (SCF SUBMISSION AUGUST 20, 2026)
+## PASTE-READY BLOCK — STELLAR / SCF ALIGNMENT (SCF SUBMISSION AUGUST 25, 2026)
 
 **Stellar Mission:** "Create equitable access to the global financial system."
 
@@ -38,7 +38,7 @@ We use Stellar Python SDK + Testnet in this August 2026 sprint; Soroban smart co
 
 > "JuanaBin PH aligns with Stellar by onboarding unbanked Filipino households to their first Stellar wallet through daily waste segregation, using Stellar's ultra-low fees to enable sustainable micro-rewards redeemable for real-world artisan products — delivering financial inclusion, transparency, and climate impact on-chain."
 >
-> — JuanaBin PH / Buslo Builders, SCF One-Liner (August 20, 2026 Submission)
+> — JuanaBin PH / Buslo Builders, SCF One-Liner (August 25, 2026 Submission)
 
 ## Quick-Reference: Stellar Alignment Points
 

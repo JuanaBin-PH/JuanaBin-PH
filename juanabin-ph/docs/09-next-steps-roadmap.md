@@ -1,40 +1,29 @@
 ---
-title: Next Steps & Roadmap
+title: Next Steps
 section: "09"
 source_pages: [22, 23]
 ---
 
-# 09 — Next Steps & Roadmap
+# 09 — Next Steps
 
-Successful completion of this 30-day Instaward (August 20 – September 18, 2026) unlocks the next phase of JuanaBin PH development. The three deliverables produced in this sprint form the technical foundation for a full SCF grant application and a 6-barangay pilot deployment.
+<!-- Scope note: the source PDF (pp.22-23) carried a five-phase roadmap running to 2028+. Only the sprint itself and the immediate next step within 2026 are retained here; the 2027-2028 phases and the long-horizon projections were removed to keep this documentation set focused on the August 25 - September 25, 2026 window. -->
 
-## 7.1 Post-Instaward Roadmap
+Successful completion of this Instaward sprint (August 25 – September 25, 2026) unlocks the next phase of JuanaBin PH development. The three deliverables produced in this sprint form the technical foundation for a full SCF grant application.
+
+## 7.1 Immediate Next Step
 
 | Phase | Timeline | Milestone | Dependency |
 | --- | --- | --- | --- |
-| 0 | **Aug 20 – Sep 18, 2026** (Days 1–30) | Instaward Sprint: 3 Deliverables + On-Chain Evidence | This SOW — current submission (August 20, 2026) |
-| 1 | Oct – Nov 2026 (Month 2–3) | Full SCF Grant Application — citing Instaward evidence package from September 18, 2026 submission | Successful completion of Phase 0 deliverables by Sep 18, 2026 |
-| 2 | Dec 2026 – Feb 2027 (Month 4–6) | 6-Barangay Pilot Expansion (500+ households, Mainnet migration) | SCF grant funding secured; Phase 0 technical foundation |
-| 3 | Mar – Sep 2027 (Month 7–12) | Soroban smart contract integration; voluntary carbon credit issuance | 6-barangay pilot data; DENR partner engagement |
-| 4 | 2028+ (Year 2) | National rollout: 50+ barangays, LGU SLA agreements, DTI/DOST partnership | Proven impact metrics; regulatory endorsement from Phase 3 |
+| 0 | **Aug 25 – Sep 25, 2026** | Instaward Sprint: 3 Deliverables + On-Chain Evidence | This SOW — current submission (August 25, 2026) |
+| 1 | Oct – Nov 2026 | Full SCF Grant Application — citing the Instaward evidence package from the September 25, 2026 submission | Successful completion of Phase 0 deliverables by Sep 25, 2026 |
 
 ## 7.2 How This Instaward Enables Phase 1 (SCF Grant)
 
-- **On-chain transaction history** provides irrefutable proof of Stellar integration quality (generated Aug 20 – Sep 18, 2026)
+- **On-chain transaction history** provides irrefutable proof of Stellar integration quality (generated Aug 25 – Sep 25, 2026)
 - **10+ household pilots** demonstrate real-world demand and community adoption readiness
 - **Public GitHub repository** enables SCF technical reviewers to audit code quality at any time
 - **LGU-ready report** demonstrates regulatory alignment (RA 9003, EPR Act) required for government partnership
-- **Carbon avoidance metrics** establish the baseline for Verra/Gold Standard carbon credit application
-
-## 7.3 Long-Term Stellar Ecosystem Value
-
-> **Every JuanaBin PH household = a new Stellar wallet.**
->
-> At **500 households (Phase 2 — early 2027):** JuanaBin PH delivers 500 previously unbanked Filipinos onto the Stellar network.
->
-> At **50 barangays (Phase 4 — 2028):** 25,000+ new Stellar wallet holders across Metro Manila.
->
-> Each JBIN token issuance = 1 Stellar transaction, creating sustainable long-term network activity funded by real circular economy value flows — not speculation. The August 20, 2026 Instaward sprint is the starting point for this trajectory.
+- **Carbon avoidance metrics** establish the baseline for a future carbon credit application
 
 ## UN SDG Alignment Summary
 

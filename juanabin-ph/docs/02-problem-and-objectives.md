@@ -22,7 +22,7 @@ The Philippines generates approximately **15 million tonnes** of solid waste per
 
 ## 3.3 Objectives
 
-The 30-day sprint scope (August 20 – September 18, 2026) is structured around five discrete, verifiable objectives, each linked directly to a sprint deliverable:
+The 30-day sprint scope (August 25 – September 25, 2026) is structured around five discrete, verifiable objectives, each linked directly to a sprint deliverable:
 
 | # | Objective | 30-Day Deliverable Link |
 | --- | --- | --- |

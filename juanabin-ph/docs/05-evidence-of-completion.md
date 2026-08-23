@@ -6,7 +6,7 @@ source_pages: [13, 14, 15]
 
 # 05 — Evidence of Completion
 
-All evidence listed below will be submitted to the SCF Instawards team upon 30-day completion (by **September 18, 2026**). Evidence is structured around verifiable, on-chain or publicly accessible artifacts only — no self-reported metrics without blockchain proof.
+All evidence listed below will be submitted to the SCF Instawards team upon sprint completion (by **September 25, 2026**). Evidence is structured around verifiable, on-chain or publicly accessible artifacts only — no self-reported metrics without blockchain proof.
 
 ## 6.1 Evidence Checklist
 
@@ -24,7 +24,7 @@ All evidence listed below will be submitted to the SCF Instawards team upon 30-d
 | [ ] | Live dashboard public URL | Public URL (browser-accessible) | `https://dashboard.juanabin.ph` (or staging) |
 | [ ] | 10 pilot household wallet addresses with JBIN balances | Stellar Explorer: account list | `testnet.stellar.expert/accounts` |
 | [ ] | 20+ pilot on-chain transactions (Explorer URLs) | Transaction hash list | `testnet.stellar.expert/tx/…` |
-| [ ] | LGU-ready pilot report (PDF export) | PDF attachment to submission | Attached to SCF forum post (September 18, 2026) |
+| [ ] | LGU-ready pilot report (PDF export) | PDF attachment to submission | Attached to SCF forum post (September 25, 2026) |
 | [ ] | Video walkthrough (3–5 min demo) | YouTube URL (unlisted or public) | `youtube.com/…` |
 | [ ] | GitHub commit — Dashboard Source Code | GitHub commit SHA + URL | `github.com/BusloBuilders/juanabin-ph` |
 | [ ] | README documentation for all 3 components (GitHub) | GitHub README (public) | `github.com/BusloBuilders/juanabin-ph/README.md` |

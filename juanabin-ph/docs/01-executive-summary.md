@@ -8,7 +8,7 @@ source_pages: [3]
 
 JuanaBin PH is a blockchain-powered waste segregation and reward platform built natively on the Stellar network. Launched from Metro Manila, Philippines, JuanaBin PH addresses three interlocking challenges facing Philippine communities in 2026: widespread household waste mismanagement, the financial exclusion of 51 million unbanked Filipinos, and the absence of transparent, tamper-proof waste-diversion records for local government units (LGUs).
 
-This Stellar Community Fund (SCF) Instawards submission funds JuanaBin PH's first production-grade 30-day sprint, running **August 20 – September 18, 2026**. The $5,000 Instaward delivers three verifiable technical deliverables that form the core infrastructure of the platform: a Stellar wallet provisioning system with JBIN custom asset, a Segregate-to-Earn logic engine, and a live pilot community demonstration with a public admin dashboard.
+This Stellar Community Fund (SCF) Instawards submission funds JuanaBin PH's first production-grade 30-day sprint, running **August 25 – September 25, 2026**. The $5,000 Instaward delivers three verifiable technical deliverables that form the core infrastructure of the platform: a Stellar wallet provisioning system with JBIN custom asset, a Segregate-to-Earn logic engine, and a live pilot community demonstration with a public admin dashboard.
 
 ## Why JuanaBin PH Qualifies for SCF Instawards (August 2026)
 
@@ -25,4 +25,4 @@ This Stellar Community Fund (SCF) Instawards submission funds JuanaBin PH's firs
 
 ## Instawards Strategic Intent
 
-JuanaBin PH is at the proof-of-concept to MVP transition stage. The Instawards format — short timeline, clear deliverables, verifiable evidence — matches this stage perfectly. The August 20 – September 18, 2026 sprint will demonstrate on-chain functionality with real transactions, real wallets, and a working pilot demo, before requesting larger SCF funding rounds. The three deliverables produced in this sprint form the technical foundation for a full SCF grant application and a 6-barangay pilot deployment in Q4 2026.
+JuanaBin PH is at the proof-of-concept to MVP transition stage. The Instawards format — short timeline, clear deliverables, verifiable evidence — matches this stage perfectly. The August 25 – September 25, 2026 sprint will demonstrate on-chain functionality with real transactions, real wallets, and a working pilot demo, before requesting larger SCF funding rounds. The three deliverables produced in this sprint form the technical foundation for a full SCF grant application.

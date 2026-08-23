@@ -9,8 +9,8 @@ Waste → Wallet → Product | Segregate-to-Earn on Stellar
 | Award Amount | $5,000 USD (Instaward) |
 | Organization | Buslo Builders (operating as JuanaBin PH) |
 | Primary Contact | Julie Ann Soriano — buslongpagasa@gmail.com |
-| Sprint Start Date | August 20, 2026 |
-| Sprint End Date | September 18, 2026 |
+| Sprint Start Date | August 25, 2026 |
+| Sprint End Date | September 25, 2026 |
 | Token Symbol | JBIN (Stellar Custom Asset) |
 | Stellar Network | Testnet (Dev) → Mainnet (Pilot) |
 | GitHub | github.com/BusloBuilders/juanabin-ph |
@@ -34,9 +34,13 @@ Waste → Wallet → Product | Segregate-to-Earn on Stellar
 | 06 | [Budget Justification](docs/06-budget-justification.md) | 16–17 |
 | 07 | [Stellar Alignment Statement](docs/07-stellar-alignment.md) | 18–19 |
 | 08 | [Team Information & Project Overview](docs/08-team-information.md) | 20–21 |
-| 09 | [Next Steps & Roadmap](docs/09-next-steps-roadmap.md) | 22–23 |
+| 09 | [Next Steps](docs/09-next-steps-roadmap.md) | 22–23 |
 | 10 | [Document Summary & Submission Checklist](docs/10-document-summary.md) | 24–25 |
+
+The working sprint plan for the same window is [SPRINT.md](SPRINT.md).
 
 ## Status
 
-v1.0 — SCF Submission Ready. Sprint: August 20 – September 18, 2026. Stellar Testnet (development) → Stellar Mainnet (pilot go-live, Phase 1).
+v1.0 — SCF Submission Ready. Sprint: August 25 – September 25, 2026. Stellar Testnet (development) → Stellar Mainnet (pilot go-live, Phase 1).
+
+Dates in this repository supersede the August 20 – September 18, 2026 window printed in the source submission PDF. The `source_pages` field in each `docs/` file still records where the material originated.
