@@ -6,7 +6,9 @@ source_pages: [24, 25]
 
 # 10 — Document Summary & Submission Checklist
 
-<!-- Revision note: re-dated to the operative August 31 - September 29, 2026 window and revised in response to SCF reviewer guidance (August 2026): four deliverables, rows added for sections 11-14, and the evidence-item counts corrected. Sections 11-14 are not PDF-derived and carry source_pages: []. -->
+<!-- Revision note: re-dated to the operative August 31 - September 29, 2026 window and revised in response to SCF reviewer guidance (August 2026): four deliverables, rows added for sections 11-14, and the evidence-item counts corrected. Sections 11-15 are not PDF-derived and carry source_pages: []. -->
+
+<!-- Revision note 2: section 15 (System Flow Diagrams) added on request; it renders the mechanisms already specified in 03, 11 and 14 as Mermaid flowcharts and introduces no new behaviour. -->
 
 ## Document Sections Summary
 
@@ -26,6 +28,7 @@ source_pages: [24, 25]
 | 12 | Verification & Reproducibility | Repo and commit identity, asset identity, network config, build instructions, environment template, test commands, 9-step verification guide, evidence index |
 | 13 | Tech Stack & Deployment | Why a classic asset and not a Soroban contract, sprint stack, explicitly deferred components, deployment schedule, hosting and cost, secret handling |
 | 14 | Data & Authorization Policy | On-chain data policy, what the event hash proves and does not prove, qualifying-submission rubric, issuer/distributor/allowlist custody, governance limitations, institutional references |
+| 15 | System Flow Diagrams | Earn flow from submission to settlement with every rejection gate mapped to its test case, verifier fail-closed state machine, deliverable sequence with the conditional participant track shown as gating nothing |
 
 ## Submission Readiness Checklist
 

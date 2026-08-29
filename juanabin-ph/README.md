@@ -164,7 +164,9 @@ If you believe you have found exposed key material in this repository, email bus
 
 ## Documentation
 
-Sections 01–10 are derived from the source submission PDF; each records its origin in `source_pages`. Sections 11–14 were written in response to SCF reviewer guidance and carry `source_pages: []`.
+Sections 01–10 are derived from the source submission PDF; each records its origin in `source_pages`. Sections 11–15 were written in response to SCF reviewer guidance and carry `source_pages: []`.
+
+The fastest way to understand how the system actually works is [15 — System Flow Diagrams](docs/15-system-flow.md), which draws the earn flow, every rejection gate, and the verifier state machine.
 
 | Section | Document | Source pages |
 | --- | --- | --- |
@@ -182,6 +184,7 @@ Sections 01–10 are derived from the source submission PDF; each records its or
 | 12 | [Verification & Reproducibility](docs/12-verification-and-reproducibility.md) | — |
 | 13 | [Tech Stack & Deployment](docs/13-tech-stack-and-deployment.md) | — |
 | 14 | [Data & Authorization Policy](docs/14-data-and-authorization-policy.md) | — |
+| 15 | [System Flow Diagrams](docs/15-system-flow.md) | — |
 
 The working sprint plan for the same window is [SPRINT.md](SPRINT.md).
 
