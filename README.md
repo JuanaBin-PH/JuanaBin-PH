@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JuanaBin-PH/juanabin-ph-backend/main/docs/assets/logo.png" width="120" alt="JuanaBin PH Logo">
+  <img src="https://raw.githubusercontent.com/JuanaBin-PH/JuanaBin-PH/main/docs/assets/logo.png" width="120" alt="JuanaBin PH Logo">
 </p>
 
 <h1 align="center">JuanaBin PH</h1>
