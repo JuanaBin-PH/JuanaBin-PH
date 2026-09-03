@@ -47,7 +47,7 @@ A visual tour of the JuanaBin PH platform — featuring dashboard analytics, sma
 
 | Landing Page | Contacts |
 | :---: | :---: |
-| <a href="https://juliesoriano2026.wixsite.com/juanabin-ph" target="_blank"><img src="assets/landing-page.jpg" alt="Landing Page" width="100%"></a> | <img src="assets/contacts.jpg" alt="Contacts" width="100%"> |
+| <a href="https://juliesoriano2026.wixsite.com/juanabin-ph" target="_blank"><img src="assets/landing-page.png" alt="Landing Page" width="100%"></a> | <img src="assets/contacts.png" alt="Contacts" width="100%"> |
 | *Official JuanaBin PH landing page (Click to visit)* | *Community portal contact & support section* |
 
 </details>
@@ -80,7 +80,7 @@ A visual tour of the JuanaBin PH platform — featuring dashboard analytics, sma
 
 | How Segregate Works (Part 1) | How Segregate Works (Part 2) | Points & Earnings Calculator |
 | :---: | :---: | :---: |
-| <img src="assets/how-segregate-works-1.jpg" alt="How Segregate Works 1" width="100%"> | <img src="assets/how-segregate-works-2.jpg" alt="How Segregate Works 2" width="100%"> | <img src="assets/calculator.jpg" alt="Calculator" width="100%"> |
+| <img src="assets/how-segregate-works-1.png" alt="How Segregate Works 1" width="100%"> | <img src="assets/how-segregate-works-2.png" alt="How Segregate Works 2" width="100%"> | <img src="assets/calculator.png" alt="Calculator" width="100%"> |
 | *Segregate-to-Earn operational workflow* | *Classification rules & waste guidelines* | *Interactive point estimator for waste yields* |
 
 </details>
@@ -91,7 +91,7 @@ A visual tour of the JuanaBin PH platform — featuring dashboard analytics, sma
 
 | Functions & Benefits | Why Stellar? | Compliance & Policy |
 | :---: | :---: | :---: |
-| <img src="assets/function-and-benefits-1.jpg" alt="Function and Benefits" width="100%"> | <img src="assets/why-stellar.jpg" alt="Why Stellar" width="100%"> | <img src="assets/compliance.jpg" alt="Compliance" width="100%"> |
+| <img src="assets/function-and-benefits-1.jpg" alt="Function and Benefits" width="100%"> | <img src="assets/why-juanabin-ph.png" alt="Why Stellar" width="100%"> | <img src="assets/compliance.png" alt="Compliance" width="100%"> |
 | *Ecosystem benefits for households & LGUs* | *Fast micro-payments via Stellar Horizon Testnet* | *Data privacy & security compliance* |
 
 </details>
@@ -102,7 +102,7 @@ A visual tour of the JuanaBin PH platform — featuring dashboard analytics, sma
 
 | Frequently Asked Questions |
 | :---: |
-| <img src="assets/faq.jpg" alt="FAQ" width="100%"> |
+| <img src="assets/faq.png" alt="FAQ" width="100%"> |
 | *Common user, LGU, and developer inquiries regarding JuanaBin PH* |
 
 </details>
