@@ -39,54 +39,65 @@
 
 ## 📱 Interface & Showcase
 
-A visual tour of the JuanaBin PH platform — featuring dashboard analytics, segregation workflows, rewards calculator, and live Stellar blockchain settlement verification. Select any section to expand.
+A visual tour of the JuanaBin PH platform — featuring dashboard analytics, smart bin features, segregation workflows, rewards calculator, and live Stellar blockchain settlement verification. Select any section to expand.
 
-<details>
+<details open>
 <summary>🌐 <b>Landing Page & Official Web Portal</b></summary>
 <br>
 
-| Landing Page |
+| Landing Page | Contacts |
+| :---: | :---: |
+| <a href="https://juliesoriano2026.wixsite.com/juanabin-ph" target="_blank"><img src="assets/landing-page.jpg" alt="Landing Page" width="100%"></a> | <img src="assets/contacts.jpg" alt="Contacts" width="100%"> |
+| *Official JuanaBin PH landing page (Click to visit)* | *Community portal contact & support section* |
+
+</details>
+
+<details>
+<summary>📊 <b>Dashboard & Live Activity</b></summary>
+<br>
+
+| Live Activity |
 | :---: |
-| <a href="https://juliesoriano2026.wixsite.com/juanabin-ph" target="_blank"><img src="assets/landing-page.jpg" alt="Landing Page" width="100%"></a> |
-| *Official JuanaBin PH landing page and public community portal (Click to visit)* |
-
-</details>
-
-<details open>
-<summary><b>📊 Dashboard & Live Activity</b></summary>
-<br>
-
-| Dashboard | Live Activity |
-| :---: | :---: |
-| <img src="assets/dashboard.jpg" alt="Dashboard" width="100%"> | <img src="assets/live-activity.jpg" alt="Live Activity" width="100%"> |
-| *Real-time metrics, JBIN distribution stats, and user reward tracking* | *Publicly verifiable on-chain transactions and disposal logs* |
+| <img src="assets/live-activity.jpg" alt="Live Activity" width="100%"> |
+| *Publicly verifiable on-chain transactions and disposal logs* |
 
 </details>
 
 <details>
-<summary><b>♻️ How It Works & Calculator</b></summary>
+<summary>🤖 <b>Smart Bin Features</b></summary>
 <br>
 
-| How It Works (Part 1) | How It Works (Part 2) | Points & Earnings Calculator |
+| Smart Bin Features (Part 1) | Smart Bin Features (Part 2) | Smart Bin Features (Part 3) |
 | :---: | :---: | :---: |
-| <img src="assets/how-it-works-1.jpg" alt="How It Works Part 1" width="100%"> | <img src="assets/how-it-works-2.jpg" alt="How It Works Part 2" width="100%"> | <img src="assets/calculator.jpg" alt="Calculator" width="100%"> |
-| *Segregate-to-Earn operational workflow* | *Classification rules & guidelines* | *Interactive point estimator for waste yields* |
+| <img src="assets/smart-bin-features-1.jpg" alt="Smart Bin Features 1" width="100%"> | <img src="assets/smart-bin-features-2.jpg" alt="Smart Bin Features 2" width="100%"> | <img src="assets/smart-bin-features-3.jpg" alt="Smart Bin Features 3" width="100%"> |
+| *Hardware integrations & sensors* | *Automated classification mechanism* | *Real-time bin status & capacity tracking* |
 
 </details>
 
 <details>
-<summary><b>🌐 Why Stellar & Compliance</b></summary>
+<summary>♻️ <b>How Segregation Works & Calculator</b></summary>
 <br>
 
-| Why Stellar | Compliance & Policy |
-| :---: | :---: |
-| <img src="assets/why-stellar.jpg" alt="Why Stellar" width="100%"> | <img src="assets/compliance.jpg" alt="Compliance" width="100%"> |
-| *Fast, low-cost micro-payments via Stellar Horizon Testnet* | *Data privacy, off-chain/on-chain security, and LGU policy alignment* |
+| How Segregate Works (Part 1) | How Segregate Works (Part 2) | Points & Earnings Calculator |
+| :---: | :---: | :---: |
+| <img src="assets/how-segregate-works-1.jpg" alt="How Segregate Works 1" width="100%"> | <img src="assets/how-segregate-works-2.jpg" alt="How Segregate Works 2" width="100%"> | <img src="assets/calculator.jpg" alt="Calculator" width="100%"> |
+| *Segregate-to-Earn operational workflow* | *Classification rules & waste guidelines* | *Interactive point estimator for waste yields* |
 
 </details>
 
 <details>
-<summary><b>❓ FAQ Section</b></summary>
+<summary>✨ <b>Functions, Benefits & Why Stellar</b></summary>
+<br>
+
+| Functions & Benefits | Why Stellar? | Compliance & Policy |
+| :---: | :---: | :---: |
+| <img src="assets/function-and-benefits-1.jpg" alt="Function and Benefits" width="100%"> | <img src="assets/why-stellar.jpg" alt="Why Stellar" width="100%"> | <img src="assets/compliance.jpg" alt="Compliance" width="100%"> |
+| *Ecosystem benefits for households & LGUs* | *Fast micro-payments via Stellar Horizon Testnet* | *Data privacy & security compliance* |
+
+</details>
+
+<details>
+<summary>❓ <b>FAQ Section</b></summary>
 <br>
 
 | Frequently Asked Questions |
