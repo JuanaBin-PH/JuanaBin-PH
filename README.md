@@ -37,6 +37,56 @@
 
 ---
 
+## 📱 Interface & Showcase
+
+A visual tour of the JuanaBin PH platform — featuring dashboard analytics, segregation workflows, rewards calculator, and live Stellar blockchain settlement verification. Select any section to expand.
+
+<details open>
+<summary><b>📊 Dashboard & Live Activity</b></summary>
+<br>
+
+| Dashboard | Live Activity |
+| :---: | :---: |
+| <img src="docs/assets/screenshots/dashboard.png" alt="Dashboard" width="100%"> | <img src="docs/assets/screenshots/live-activity.png" alt="Live Activity" width="100%"> |
+| *Real-time metrics, JBIN distribution stats, and user reward tracking* | *Publicly verifiable on-chain transactions and disposal logs* |
+
+</details>
+
+<details>
+<summary><b>♻️ How It Works & Calculator</b></summary>
+<br>
+
+| How It Works | Points & Earnings Calculator |
+| :---: | :---: |
+| <img src="docs/assets/screenshots/how-it-works.png" alt="How It Works" width="100%"> | <img src="docs/assets/screenshots/calculator.png" alt="Calculator" width="100%"> |
+| *Segregate-to-Earn operational workflow and classification rules* | *Interactive point estimator for waste segregation yields* |
+
+</details>
+
+<details>
+<summary><b>🌐 Why Stellar & Compliance</b></summary>
+<br>
+
+| Why Stellar | Compliance & Policy |
+| :---: | :---: |
+| <img src="docs/assets/screenshots/why-stellar.png" alt="Why Stellar" width="100%"> | <img src="docs/assets/screenshots/compliance.png" alt="Compliance" width="100%"> |
+| *Fast, low-cost micro-payments via Stellar Horizon Testnet* | *Data privacy, off-chain/on-chain security, and LGU policy alignment* |
+
+</details>
+
+<details>
+<summary><b>❓ FAQ Section</b></summary>
+<br>
+
+| Frequently Asked Questions |
+| :---: |
+| <img src="docs/assets/screenshots/faq.png" alt="FAQ" width="100%"> |
+| *Common user, LGU, and developer inquiries regarding JuanaBin PH* |
+
+</details>
+
+---
+
 ## 🧩 Why JuanaBin PH
 
 **Waste → Wallet → Product | Segregate-to-Earn on Stellar**
