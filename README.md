@@ -39,7 +39,7 @@
 
 ## 📱 Interface & Showcase
 
-A visual tour of the JuanaBin PH platform — featuring our [Official Landing Page](https://juliesoriano2026.wixsite.com/juanabin-ph), dashboard analytics, segregation workflows, rewards calculator, and live Stellar blockchain settlement verification. Select any section to expand.
+A visual tour of the JuanaBin PH platform — featuring dashboard analytics, segregation workflows, rewards calculator, and live Stellar blockchain settlement verification. Select any section to expand.
 
 <details>
 <summary>🌐 <b>Landing Page & Official Web Portal</b></summary>
@@ -47,8 +47,8 @@ A visual tour of the JuanaBin PH platform — featuring our [Official Landing Pa
 
 | Landing Page |
 | :---: |
-| [![Landing Page](https://juliesoriano2026.wixsite.com/juanabin-ph)](https://juliesoriano2026.wixsite.com/juanabin-ph) |
-| *Official JuanaBin PH landing page and public community portal* |
+| <a href="https://juliesoriano2026.wixsite.com/juanabin-ph" target="_blank"><img src="assets/landing-page.jpg" alt="Landing Page" width="100%"></a> |
+| *Official JuanaBin PH landing page and public community portal (Click to visit)* |
 
 </details>
 
@@ -58,7 +58,7 @@ A visual tour of the JuanaBin PH platform — featuring our [Official Landing Pa
 
 | Dashboard | Live Activity |
 | :---: | :---: |
-| <img src="docs/assets/screenshots/dashboard.png" alt="Dashboard" width="100%"> | <img src="docs/assets/screenshots/live-activity.png" alt="Live Activity" width="100%"> |
+| <img src="assets/dashboard.jpg" alt="Dashboard" width="100%"> | <img src="assets/live-activity.jpg" alt="Live Activity" width="100%"> |
 | *Real-time metrics, JBIN distribution stats, and user reward tracking* | *Publicly verifiable on-chain transactions and disposal logs* |
 
 </details>
@@ -67,10 +67,10 @@ A visual tour of the JuanaBin PH platform — featuring our [Official Landing Pa
 <summary><b>♻️ How It Works & Calculator</b></summary>
 <br>
 
-| How It Works | Points & Earnings Calculator |
-| :---: | :---: |
-| <img src="docs/assets/screenshots/how-it-works.png" alt="How It Works" width="100%"> | <img src="docs/assets/screenshots/calculator.png" alt="Calculator" width="100%"> |
-| *Segregate-to-Earn operational workflow and classification rules* | *Interactive point estimator for waste segregation yields* |
+| How It Works (Part 1) | How It Works (Part 2) | Points & Earnings Calculator |
+| :---: | :---: | :---: |
+| <img src="assets/how-it-works-1.jpg" alt="How It Works Part 1" width="100%"> | <img src="assets/how-it-works-2.jpg" alt="How It Works Part 2" width="100%"> | <img src="assets/calculator.jpg" alt="Calculator" width="100%"> |
+| *Segregate-to-Earn operational workflow* | *Classification rules & guidelines* | *Interactive point estimator for waste yields* |
 
 </details>
 
@@ -80,7 +80,7 @@ A visual tour of the JuanaBin PH platform — featuring our [Official Landing Pa
 
 | Why Stellar | Compliance & Policy |
 | :---: | :---: |
-| <img src="docs/assets/screenshots/why-stellar.png" alt="Why Stellar" width="100%"> | <img src="docs/assets/screenshots/compliance.png" alt="Compliance" width="100%"> |
+| <img src="assets/why-stellar.jpg" alt="Why Stellar" width="100%"> | <img src="assets/compliance.jpg" alt="Compliance" width="100%"> |
 | *Fast, low-cost micro-payments via Stellar Horizon Testnet* | *Data privacy, off-chain/on-chain security, and LGU policy alignment* |
 
 </details>
@@ -91,7 +91,7 @@ A visual tour of the JuanaBin PH platform — featuring our [Official Landing Pa
 
 | Frequently Asked Questions |
 | :---: |
-| <img src="docs/assets/screenshots/faq.png" alt="FAQ" width="100%"> |
+| <img src="assets/faq.jpg" alt="FAQ" width="100%"> |
 | *Common user, LGU, and developer inquiries regarding JuanaBin PH* |
 
 </details>
