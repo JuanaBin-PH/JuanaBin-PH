@@ -56,10 +56,10 @@ A visual tour of the JuanaBin PH platform — featuring dashboard analytics, sma
 <summary>📊 <b>Dashboard & Live Activity</b></summary>
 <br>
 
-| Live Activity |
-| :---: |
-| <img src="assets/live-activity.jpg" alt="Live Activity" width="100%"> |
-| *Publicly verifiable on-chain transactions and disposal logs* |
+| Dashboard | Live Activity |
+| :---: | :---: |
+| <img src="assets/dashboard.jpg" alt="Dashboard" width="100%"> | <img src="assets/live-activity.jpg" alt="Live Activity" width="100%"> |
+| *Real-time metrics, JBIN distribution stats, and user reward tracking* | *Publicly verifiable on-chain transactions and disposal logs* |
 
 </details>
 
