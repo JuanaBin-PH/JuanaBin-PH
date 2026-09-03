@@ -52,6 +52,14 @@ Solid waste management remains one of the most pressing civic challenges in urba
 
 ---
 
+## 🌐 Official Links & Platform Overview
+
+* **Official Website:** [https://juanabin-landing-page.vercel.app/](https://juanabin-landing-page.vercel.app/)
+* **Frontend Repository:** Available in a separate repository *(React + Tailwind)*.
+* **Backend Repository:** FastAPI + PostgreSQL + Stellar SDK *(Current Repository)*.
+
+---
+
 ## ⚙️ How It Works (Off-chain Logic, On-chain Settlement)
 
 1. **Item Disposal:** A resident presents a sorted waste item to a JuanaBin hardware unit or officer intake station.
