@@ -39,7 +39,18 @@
 
 ## 📱 Interface & Showcase
 
-A visual tour of the JuanaBin PH platform — featuring dashboard analytics, segregation workflows, rewards calculator, and live Stellar blockchain settlement verification. Select any section to expand.
+A visual tour of the JuanaBin PH platform — featuring our [Official Landing Page](https://juliesoriano2026.wixsite.com/juanabin-ph), dashboard analytics, segregation workflows, rewards calculator, and live Stellar blockchain settlement verification. Select any section to expand.
+
+<details>
+<summary>🌐 <b>Landing Page & Official Web Portal</b></summary>
+<br>
+
+| Landing Page |
+| :---: |
+| [![Landing Page](https://juliesoriano2026.wixsite.com/juanabin-ph)](https://juliesoriano2026.wixsite.com/juanabin-ph) |
+| *Official JuanaBin PH landing page and public community portal* |
+
+</details>
 
 <details open>
 <summary><b>📊 Dashboard & Live Activity</b></summary>
