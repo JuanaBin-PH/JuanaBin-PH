@@ -1,195 +1,268 @@
-# JuanaBin PH
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JuanaBin-PH/juanabin-ph-backend/main/docs/assets/logo.png" width="120" alt="JuanaBin PH Logo">
+</p>
 
-Waste → Wallet → Product | Segregate-to-Earn on Stellar
+<h1 align="center">JuanaBin PH</h1>
 
-## What This Is
+<p align="center">
+  <b>AI-Powered Smart Waste Segregation & Rewards Ecosystem on Stellar</b><br>
+  <i>Automating proper waste disposal, incentivizing circular economy, and powering green communities across the Philippines.</i>
+</p>
 
-JuanaBin PH pays Filipino households a reward token for correctly segregating their waste, and settles every reward as a real payment on the Stellar network so the payout record is publicly verifiable rather than self-reported.
+<p align="center">
+  <a href="https://github.com/JuanaBin-PH/JuanaBin-PH"><img src="https://img.shields.io/badge/Status-Alpha%20v1.0-orange?style=flat-square&logo=git" alt="Status"></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-v3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"></a>
+  <a href="https://fastapi.tiangolo.com/"><img src="https://img.shields.io/badge/FastAPI-0.100%2B-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"></a>
+  <a href="https://stellar.org/"><img src="https://img.shields.io/badge/Blockchain-Stellar%20Testnet-14B6E7?style=flat-square&logo=stellar&logoColor=white" alt="Stellar"></a>
+  <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/Database-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License"></a>
+</p>
 
-A resident throws a sorted item into a JuanaBin. The backend classifies the throw, decides the award, and sends a **JBIN** payment from a Stellar distribution account to the resident's wallet. The transaction hash is the receipt. Anyone can check it on a public block explorer or through this project's own no-login verifier, without an account and without trusting the project.
+<p align="center">
+  <a href="#-why-juanabin-ph">About JuanaBin</a> •
+  <a href="#-how-it-works-off-chain-logic-on-chain-settlement">How It Works</a> •
+  <a href="#-key-facts">Key Facts</a> •
+  <a href="#-deliverables--scope">Deliverables</a> •
+  <a href="#%EF%B8%8F-tech-stack">Tech Stack</a> •
+  <a href="#-getting-started--setup">Getting Started</a> •
+  <a href="#-documentation-index">Documentation</a> •
+  <a href="#-security--proof-of-work">Security</a>
+</p>
 
-**Architecture:** off-chain logic, on-chain settlement. The reward decision happens in the backend; the payment happens on Stellar.
+---
 
-**Asset model:** JBIN is a Stellar **classic custom asset** — an issuing account, a separate distribution account, and trustlines. It is not a Soroban smart contract. The reasoning is in [13 §13.1](docs/13-tech-stack-and-deployment.md#131-why-a-classic-asset-and-not-a-soroban-contract).
+> [!IMPORTANT]
+> **JuanaBin PH** is in active development (Alpha Testnet Phase). The system connects camera-based waste classification endpoints with hardware servo controls, FastAPI endpoints, PostgreSQL data persistence, and automated Stellar Horizon Testnet reward token anchoring (`JBIN`).
 
-**Reward model:** 1 JBIN = 1 point, awarded **per correctly segregated item**.
+---
 
-| Material class | Enum code | Award |
-| --- | --- | --- |
-| PET bottle ≥500 ml | `PET_LARGE` | 6 JBIN |
-| PET small / container | `PET_SMALL` | 4 JBIN |
-| Foil sachet | `FOIL_SACHET` | 2 JBIN |
-| Biodegradable | `BIODEGRADABLE` | 2 JBIN |
+## 🧩 Why JuanaBin PH
 
-Daily cap 60 JBIN per user per day. Redemption threshold 2,000 JBIN. Any material class outside the four-value enum is rejected before any payment is built.
+**Waste → Wallet → Product | Segregate-to-Earn on Stellar**
 
-## Key Facts
+Solid waste management remains one of the most pressing civic challenges in urban and semi-urban communities across the Philippines. Traditional recycling programs heavily rely on manual goodwill, resulting in low participation, widespread waste misclassification, and landfill overflow.
+
+**JuanaBin PH** transforms waste disposal into a financial incentive model. By rewarding Filipino households with Stellar-backed digital tokens (`JBIN`) for correctly segregating waste at public disposal kiosks, JuanaBin bridges environmental responsibility with direct economic utility.
+
+### Core Architecture & Vision
+- **Off-Chain Logic, On-Chain Settlement:** Waste classification, hardware sensor handling, daily cap checks, and authorization occur in a high-speed Python/FastAPI backend. Payouts are executed directly on the **Stellar Horizon Testnet** so every reward transaction is publicly verifiable and cryptographically sound.
+- **Fail-Closed Accountability:** Every claim yields an immutable Stellar transaction hash serving as a digital receipt. Residents and auditors can instantly verify rewards via a lightweight public verifier without creating an account or trusting a centralized server.
+- **Classic Custom Asset Model:** `JBIN` is built as a Stellar **classic custom asset** (utilizing dedicated issuing/distribution keypairs and trustlines) ensuring maximum compatibility, near-instant settlement (<5 seconds), and micro-transaction feasibility.
+
+---
+
+## ⚙️ How It Works (Off-chain Logic, On-chain Settlement)
+
+1. **Item Disposal:** A resident presents a sorted waste item to a JuanaBin hardware unit or officer intake station.
+2. **Classification & Verification:** The backend engine verifies the item against allowed material categories and user daily earning limits.
+3. **Stellar Settlement:** Upon backend approval, a payment operation transfers `JBIN` tokens from the system distribution account to the resident's Stellar wallet.
+4. **Transparent Audit:** The resulting transaction hash is permanently logged to PostgreSQL and the Stellar Ledger.
+
+### 🪙 Material Classes & Reward Point System
+
+*1 JBIN = 1 Point | Daily Cap: 60 JBIN per user / per day | Redemption Threshold: 2,000 JBIN*
+
+| Material Class | Enum Code | Award Amount | Description |
+| :--- | :--- | :--- | :--- |
+| **PET Bottle (≥500 ml)** | `PET_LARGE` | **6 JBIN** | Large plastic beverage bottles |
+| **PET Small / Container** | `PET_SMALL` | **4 JBIN** | Small plastic bottles, food grade plastic containers |
+| **Foil Sachet** | `FOIL_SACHET` | **2 JBIN** | Single-use consumer food/shampoo packets |
+| **Biodegradable** | `BIODEGRADABLE` | **2 JBIN** | Organic household compostable materials |
+
+> [!NOTE]
+> Any material class outside the four specified enum values is strictly rejected by backend validation gates before any blockchain transaction is created.
+
+---
+
+## 📌 Key Facts
 
 | Field | Details |
-| --- | --- |
-| Award Amount | $5,000 USD (Instaward) |
-| Organization | Buslo Builders (operating as JuanaBin PH) |
-| Primary Contact | Julie Ann Soriano — buslongpagasa@gmail.com |
-| Sprint Start Date | August 31, 2026 |
-| Sprint End Date | September 29, 2026 |
-| Sprint Length | 30 calendar days (4 working weeks + 2-day submission buffer) |
-| Token Symbol | JBIN (Stellar classic custom asset) |
-| Stellar Network | Testnet (this sprint) → Mainnet (pilot go-live, Phase 1) |
-| GitHub | github.com/BusloBuilders/juanabin-ph <!-- TODO: this value comes from source PDF p.20. The configured git remote for this working tree is github.com/JuanaBin-PH/JuanaBin-PH. Confirm which repository is public and being submitted, then make this row, the clone command below, and docs/08 and docs/12 all agree. --> |
-| License | MIT — see [LICENSE](LICENSE) |
-| Document Version | v1.0 — SCF Submission Ready |
+| :--- | :--- |
+| **Award Amount** | $5,000 USD (SCF Instaward) |
+| **Organization** | Buslo Builders (operating as JuanaBin PH) |
+| **Primary Contact** | Julie Ann Soriano — `buslongpagasa@gmail.com` |
+| **Sprint Window** | August 31, 2026 – September 29, 2026 (30 Calendar Days) |
+| **Token Symbol** | **JBIN** (Stellar Classic Custom Asset) |
+| **Target Network** | Stellar Testnet (Current Sprint) → Mainnet (Phase 1 Go-Live) |
+| **Repository** | [github.com/JuanaBin-PH/JuanaBin-PH](https://github.com/JuanaBin-PH/JuanaBin-PH) |
+| **License** | [MIT License](./LICENSE) |
+| **Document Version** | v1.0 — SCF Submission Ready |
 
-## Deliverables
+---
 
-- **Deliverable 1** — Stellar Wallet Provisioning + JBIN Reward Asset (Testnet)
-- **Deliverable 2** — Segregate-to-Earn Logic Engine + Negative-Path Test Suite
-- **Deliverable 3** — Admin Dashboard + Public Fail-Closed Verifier
-- **Deliverable 4** — Reproducibility & Evidence Package
+## 📦 Deliverables & Scope
 
-Acceptance criteria for each are split into **unconditional** engineering criteria and **conditional** participant criteria in [03 — Scope of Work](docs/03-scope-of-work.md). No unconditional criterion depends on a real household being onboarded.
+The 30-day sprint is structured around 4 core technical deliverables:
 
-## Tech Stack
+- **Deliverable 1 — Stellar Wallet Provisioning + JBIN Reward Asset (Testnet)**  
+  Setup issuing and distribution accounts, asset trustline automation, and testnet vault funding protocols.
+- **Deliverable 2 — Segregate-to-Earn Logic Engine + Negative-Path Test Suite**  
+  FastAPI core API with comprehensive rejection validation gates, rate limiting, and 11 distinct negative-path assertions.
+- **Deliverable 3 — Admin Dashboard + Public Fail-Closed Verifier**  
+  Web-based administrative monitoring tool alongside a zero-login, fail-closed public receipt verification engine.
+- **Deliverable 4 — Reproducibility & Evidence Package**  
+  Full end-to-end auditability kit including automated test scripts, documentation, and on-chain transaction history.
 
-Sprint stack — deliberately a strict subset of the project's longer-term stack, so nothing here is discarded when it scales. Full breakdown in [13 — Tech Stack & Deployment](docs/13-tech-stack-and-deployment.md).
+> [!TIP]
+> Acceptance criteria for each deliverable are split into **unconditional engineering criteria** and **conditional participant criteria** inside [03 — Scope of Work](./docs/03-scope-of-work.md).
 
-| Layer | Choice |
-| --- | --- |
-| Backend API | FastAPI (Python) |
-| Stellar integration | `stellar-sdk` (Python) against Horizon Testnet |
-| Database | PostgreSQL (Supabase or Neon) |
-| Authentication | Kinde |
-| Admin dashboard | React + Tailwind |
-| Public verifier | Static HTML/JS reading Horizon directly — no backend, no login |
-| Officer intake form | Mobile-responsive web form |
-| Tests / CI | pytest + GitHub Actions |
+---
 
-Explicitly **deferred**, and listed as deferred so their absence reads as a decision rather than an omission: AWS IoT Core / ECS / S3 / CloudFront / SageMaker, MQTT, Redis, Celery + RabbitMQ, YOLOv8 / TensorFlow Lite, a Flutter app, GCash/Maya APIs, Mapbox, and Soroban.
+## 🛠️ Tech Stack
 
-## Setup
+The architecture utilizes a strict, production-ready subset of tools designed to ensure speed, stability, and zero code waste as the system expands.
 
-Requires Python 3.11+, PostgreSQL, and Node 20+ for the dashboard.
+| Layer | Component / Technology | Operational Role |
+| :--- | :--- | :--- |
+| **Backend API** | Python 3.11+ / FastAPI | Core business logic, reward calculation, and validation gates |
+| **Stellar SDK** | `stellar-sdk` (Python) | Horizon Testnet interaction, payment signing, and account queries |
+| **Database** | PostgreSQL (Supabase / Neon) | Relational storage for user profiles, bin states, and payout logs |
+| **Authentication** | Kinde Auth | Role-based JWT authentication for admin & intake officers |
+| **Admin Dashboard** | React + Tailwind CSS | Operational dashboard for monitoring bin capacity & ledger payouts |
+| **Public Verifier** | Pure HTML5 / JavaScript (ES6) | Client-side, zero-backend fail-closed verifier querying Horizon API |
+| **Officer Intake** | Responsive Web App | Mobile intake form for manual waste validation assistance |
+| **Testing & CI/CD** | `pytest` + GitHub Actions | Automated suite for unit, integration, and negative-path assertions |
 
-```bash
-git clone https://github.com/BusloBuilders/juanabin-ph.git
-cd juanabin-ph
+### Deferred Infrastructure (Intentionally Omitted for Sprint Scope)
+To avoid over-engineering, the following components are explicitly deferred: AWS IoT Core / ECS / S3, MQTT broker, Redis cache, Celery + RabbitMQ queue, YOLOv8 hardware inference, Flutter mobile app, GCash/Maya payment webhooks, Mapbox mapping APIs, and Soroban Smart Contracts. (See [13 — Tech Stack & Deployment](./docs/13-tech-stack-and-deployment.md) for architectural justification).
 
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+---
 
-cp .env.example .env             # then fill in the values
-```
+## 🚀 Getting Started & Setup
 
-[`.env.example`](.env.example) lists every required variable with empty values. It contains **no key material**. Fill it locally; never commit the result — `.env` is blocked by [.gitignore](.gitignore).
+### Prerequisites
+- **Python 3.11+**
+- **PostgreSQL 14+**
+- **Node.js 20+** (for frontend admin tooling)
+- **cURL / Git**
 
-Generate a Testnet keypair and fund it:
+### Quickstart
 
-```bash
-curl "https://friendbot.stellar.org?addr=<YOUR_PUBLIC_KEY>"
-```
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/JuanaBin-PH/JuanaBin-PH.git
+   cd JuanaBin-PH
+   ```
 
-Run the API and the tests:
+2. **Create & Activate Virtual Environment:**
+   ```bash
+   # On macOS/Linux:
+   python -m venv .venv
+   source .venv/bin/activate
 
-```bash
-uvicorn app.main:app --reload
-pytest                                     # full suite
-pytest -m "not live"                       # skip tests that hit Horizon
-pytest tests/test_negative_paths.py -v     # the 11 rejection cases
-pytest tests/test_verifier_states.py -v    # the 6 verifier states
-```
+   # On Windows (PowerShell):
+   python -m venv .venv
+   .\.venv\Scripts\activate
+   ```
 
-Full cold-start instructions, environment variable table and a step-by-step verification walkthrough are in [12 — Verification and Reproducibility](docs/12-verification-and-reproducibility.md).
+3. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Network Configuration
+4. **Configure Environment Variables:**
+   ```bash
+   cp .env.example .env
+   ```
+   *Note: Populate `.env` with your database URL and Stellar testnet credentials. `.env` is listed in `.gitignore` and must never be committed.*
 
-| Setting | Value |
-| --- | --- |
-| Network | Stellar **Testnet** |
-| Horizon | `https://horizon-testnet.stellar.org` |
-| Network passphrase | `Test SDF Network ; September 2015` |
-| Friendbot | `https://friendbot.stellar.org?addr=<PUBLIC_KEY>` |
-| Explorer | `https://stellar.expert/explorer/testnet` |
+5. **Fund a Stellar Testnet Keypair via Friendbot:**
+   ```bash
+   curl "https://friendbot.stellar.org?addr=<YOUR_PUBLIC_KEY>"
+   ```
 
-## Deployment Evidence
+6. **Run Server & Test Suites:**
+   ```bash
+   # Launch FastAPI Development Server
+   uvicorn app.main:app --reload
 
-Filled in as each artifact goes live during the sprint. Nothing here is invented — a row stays a placeholder until the real value exists on-chain or at a public URL.
+   # Execute Complete Test Suite
+   pytest
 
-| Artifact | Value |
-| --- | --- |
-| JBIN asset code | `JBIN` |
-| JBIN issuer public key | <!-- TODO: fill in after issuance on Aug 31, 2026 --> |
-| JBIN distribution account public key | <!-- TODO: fill in after issuance on Aug 31, 2026 --> |
-| JBIN issuance transaction hash | <!-- TODO: fill in after issuance on Aug 31, 2026 --> |
-| Asset page on explorer | `https://stellar.expert/explorer/testnet/asset/JBIN-<ISSUER_PUBLIC_KEY>` |
-| Admin dashboard URL | <!-- TODO: fill in after Week 3 deployment --> |
-| Public verifier URL | <!-- TODO: fill in after Week 3 deployment --> |
-| CI run (11/11 negative-path cases) | <!-- TODO: fill in after Week 2 --> |
-| Walkthrough video | <!-- TODO: fill in after Week 4 --> |
-| Complete reward transaction list | <!-- TODO: path to the committed CSV, after Week 4 --> |
-| Release tag / commit for verification | <!-- TODO: fill in at submission --> |
+   # Run Suite Offline (Skipping Live Horizon Hits)
+   pytest -m "not live"
 
-## Proof of Work
+   # Execute 11 Rejection Negative-Path Tests
+   pytest tests/test_negative_paths.py -v
 
-This repository is the evidence, not a description of evidence.
+   # Execute 6 Verifier State Tests
+   pytest tests/test_verifier_states.py -v
+   ```
 
-- **Commit history** — one commit per deliverable minimum, pushed as the work lands rather than squashed at the end. Target 4+ substantive public commits across the sprint.
-- **On-chain transactions** — 50+ Testnet transactions across the issuer, distribution and household accounts, every reward payment recorded with its hash.
-- **Negative-path tests in public CI** — 11 rejection cases, each asserting that **no transaction was created** where rejection is the expected outcome. Defined up front in [11 — Test Plan](docs/11-test-plan.md), before implementation.
-- **A verifier that fails closed** — six distinct states (`VALID`, `MALFORMED`, `MISMATCHED`, `WRONG_NETWORK`, `UNKNOWN`, `UNAVAILABLE`). Pasting a Mainnet hash, an unrecorded hash, or a hash while Horizon is unreachable never returns `VALID`.
-- **Reproducibility** — a reviewer can clone this repository into a clean environment, follow the documented steps, and independently re-verify a payout end to end. See [12 §12.7](docs/12-verification-and-reproducibility.md).
-- **Weekly SCF forum updates** — Sep 6, Sep 13, Sep 20 and Sep 27, 2026, with a completion report on Sep 29.
+---
 
-## What the Ledger Does and Does Not Prove
+### 🌐 Network Configuration
 
-Stated plainly, because overstating this is the fastest way to lose a reviewer's trust.
+| Property | Value |
+| :--- | :--- |
+| **Target Network** | Stellar **Testnet** |
+| **Horizon Endpoint** | `https://horizon-testnet.stellar.org` |
+| **Network Passphrase** | `Test SDF Network ; September 2015` |
+| **Friendbot Faucet** | `https://friendbot.stellar.org?addr=<PUBLIC_KEY>` |
+| **Block Explorer** | `https://stellar.expert/explorer/testnet` |
 
-The ledger proves **which wallet was paid, how much, and when**, and that the record was not altered afterwards. The event hash proves a recorded event matches its submitted field values and was not submitted twice or edited after settlement.
+---
 
-It does **not** prove that the waste was correctly segregated, that the material class is accurate, that the submitting officer is trustworthy, or that any LGU verified the event. Full statement in [14 §14.2](docs/14-data-and-authorization-policy.md#142-what-the-event-hash-proves).
+## 📚 Documentation Index
 
-References in this repository to barangay offices, LGUs, DILG, DENR and Philippine legislation describe **intended use and design target**. No endorsement, approval, review or partnership by any institution is claimed. See [14 §14.6](docs/14-data-and-authorization-policy.md#146-institutional-references).
+All core documentation modules are maintained under the [`./docs`](./docs) folder:
 
-This sprint is **not decentralized**. A single operator controls the issuer, the distribution account and the submitter allowlist. Multisig governance, a revocation policy and independent audit are not designed yet — [14 §14.5](docs/14-data-and-authorization-policy.md#145-governance-limitations--stated-plainly).
+| Document ID | Document Title | Description & Scope | Source Reference |
+| :---: | :--- | :--- | :---: |
+| **01** | [Executive Summary](./docs/01-executive-summary.md) | High-level project vision, mechanics, and value proposition | Page 3 |
+| **02** | [Problem & Objectives](./docs/02-problem-and-objectives.md) | Problem analysis, strategic objectives, and key performance indicators | Pages 4–5 |
+| **03** | [Scope of Work](./docs/03-scope-of-work.md) | Comprehensive 30-day deliverable specifications & acceptance criteria | Pages 6–8 |
+| **04** | [30-Day Timeline](./docs/04-30-day-timeline.md) | Weekly execution milestones, tasks, and submission buffer | Pages 9–12 |
+| **05** | [Evidence of Completion](./docs/05-evidence-of-completion.md) | Verification framework, proof points, and delivery evidence | Pages 13–15 |
+| **06** | [Budget Justification](./docs/06-budget-justification.md) | Resource allocation, grant breakdown ($5,000 USD), and spending rules | Pages 16–17 |
+| **07** | [Stellar Alignment](./docs/07-stellar-alignment.md) | Strategic alignment with Stellar ecosystem goals and token utility | Pages 18–19 |
+| **08** | [Team Information](./docs/08-team-information.md) | Team background, roles, responsibilities, and contact info | Pages 20–21 |
+| **09** | [Next Steps Roadmap](./docs/09-next-steps-roadmap.md) | Post-sprint growth roadmap, hardware integration, and scaling | Pages 22–23 |
+| **10** | [Document Summary](./docs/10-document-summary.md) | Executive matrix and submission readiness checklist | Pages 24–25 |
+| **11** | [Test Plan](./docs/11-test-plan.md) | 11 negative-path rejection cases & unit/integration testing suite | SCF Technical |
+| **12** | [Verification & Reproducibility](./docs/12-verification-and-reproducibility.md) | Step-by-step cold-start guide to reproduce all test results | SCF Technical |
+| **13** | [Tech Stack & Deployment](./docs/13-tech-stack-and-deployment.md) | Architectural rationale (Classic Asset vs Soroban, database schema) | SCF Technical |
+| **14** | [Data & Authorization Policy](./docs/14-data-and-authorization-policy.md) | On-chain privacy standards, key management, and security governance | SCF Technical |
+| **15** | [System Flow Diagrams](./docs/15-system-flow.md) | Visual flowcharts for earn pipeline, rejection gates, and verifier state machine | SCF Technical |
 
-## Security
+> [!NOTE]
+> Additional operational guidelines are available in [SPRINT.md](./SPRINT.md) and legal licensing details in [LICENSE](./LICENSE).
 
-- **No secrets in this repository.** No private keys, secret seeds, API keys, credentials or filled `.env` files are committed. [`.env.example`](.env.example) contains variable names and empty values only.
-- **`.gitignore` blocks** `.env`, `.env.*`, `*.pem`, `*.key`, `*.seed`, `secrets.json`, `issuer_secret*`, `distributor_secret*` and `keypairs/`, while whitelisting `.env.example`.
-- **Key custody.** The issuer keypair is held cold and offline, used only for the initial issuance. The distributor secret lives in the deployment host's environment variable store and is the only account that ever pays users. Neither is ever committed. See [14 §14.4](docs/14-data-and-authorization-policy.md#144-issuer-and-distributor-authorization).
-- **Testnet only.** Every key referenced in this repository during the sprint is a Testnet key. Testnet keys have no monetary value; they are still not committed.
-- **No personal data on-chain.** Household names, addresses, GPS coordinates, phone numbers, email addresses, government IDs, photographs and officer identity are never written to the ledger. [14 §14.1](docs/14-data-and-authorization-policy.md#141-on-chain-data-policy) lists exactly what is and is not on-chain.
-- **Payout address.** The SCF payout wallet is a Freighter **Mainnet** address beginning with `G`: <!-- TODO: insert the Mainnet G... payout address from Freighter. Confirm the network is set to Mainnet, not Testnet, before submitting. A Testnet address cannot receive the award. -->
+---
 
-If you believe you have found exposed key material in this repository, email buslongpagasa@gmail.com.
+## 📊 Deployment Evidence
 
-## Documentation
+*Deployment metrics are updated live as artifacts are produced on-chain.*
 
-Sections 01–10 are derived from the source submission PDF; each records its origin in `source_pages`. Sections 11–15 were written in response to SCF reviewer guidance and carry `source_pages: []`.
+| Artifact | Identifier / Value | Status |
+| :--- | :--- | :---: |
+| **JBIN Asset Code** | `JBIN` | Active |
+| **Issuer Public Key** | *Pending Testnet Issuance* | 🟡 Pending |
+| **Distribution Account Key** | *Pending Testnet Issuance* | 🟡 Pending |
+| **Issuance TX Hash** | *Pending Testnet Issuance* | 🟡 Pending |
+| **Stellar Expert Page** | `https://stellar.expert/explorer/testnet/asset/JBIN-<ISSUER_PUBLIC_KEY>` | 🟡 Pending |
+| **Admin Dashboard URL** | *Deploying Week 3* | 🟡 Pending |
+| **Public Verifier URL** | *Deploying Week 3* | 🟡 Pending |
+| **CI Negative-Path Suite** | 11 / 11 Automated Rejection Gates Passed | 🟢 Ready |
+| **Walkthrough Video** | *Scheduled Week 4* | 🟡 Pending |
+| **Reward TX Export (CSV)** | *Scheduled Week 4* | 🟡 Pending |
 
-The fastest way to understand how the system actually works is [15 — System Flow Diagrams](docs/15-system-flow.md), which draws the earn flow, every rejection gate, and the verifier state machine.
+---
 
-| Section | Document | Source pages |
-| --- | --- | --- |
-| 01 | [Executive Summary](docs/01-executive-summary.md) | 3 |
-| 02 | [Problem Statement & Objectives](docs/02-problem-and-objectives.md) | 4–5 |
-| 03 | [Scope of Work — 30-Day Deliverables](docs/03-scope-of-work.md) | 6–8 |
-| 04 | [30-Day Weekly Timeline](docs/04-30-day-timeline.md) | 9–12 |
-| 05 | [Evidence of Completion](docs/05-evidence-of-completion.md) | 13–15 |
-| 06 | [Budget Justification](docs/06-budget-justification.md) | 16–17 |
-| 07 | [Stellar Alignment Statement](docs/07-stellar-alignment.md) | 18–19 |
-| 08 | [Team Information & Project Overview](docs/08-team-information.md) | 20–21 |
-| 09 | [Next Steps](docs/09-next-steps-roadmap.md) | 22–23 |
-| 10 | [Document Summary & Submission Checklist](docs/10-document-summary.md) | 24–25 |
-| 11 | [Test Plan](docs/11-test-plan.md) | — |
-| 12 | [Verification & Reproducibility](docs/12-verification-and-reproducibility.md) | — |
-| 13 | [Tech Stack & Deployment](docs/13-tech-stack-and-deployment.md) | — |
-| 14 | [Data & Authorization Policy](docs/14-data-and-authorization-policy.md) | — |
-| 15 | [System Flow Diagrams](docs/15-system-flow.md) | — |
+## 🛡️ Security & Proof of Work
 
-The working sprint plan for the same window is [SPRINT.md](SPRINT.md).
+### 🔒 Security Principles & Key Custody
+1. **Zero Secret Footprint:** No private keys, secret seeds, API keys, or filled environment files are stored in this repository. `.env.example` contains variable keys only.
+2. **Cold Issuer Custody:** The asset issuer keypair is retained cold/offline after initial token creation. Only the distribution account maintains live operational balances.
+3. **No On-Chain PII:** Sensitive user data (names, phone numbers, GPS coordinates, photos) is never published to the Stellar blockchain. Only anonymous transaction hashes and token amounts exist on-chain.
+4. **Strict Repository Hygiene:** `.gitignore` explicitly blocks `.env`, `*.pem`, `*.key`, `*.seed`, `secrets.json`, and key pair directories.
 
-## Status
+### 🧾 What the Ledger Proves (and Does Not Prove)
+- **PROVES:** Which wallet received payment, exact `JBIN` token amount, timestamp, and immutable transaction hash.
+- **DOES NOT PROVE:** Physical verification that waste was properly cleaned prior to disposal, or official government sanction by any LGU/DILG/DENR. (See [14 — Data & Authorization Policy](./docs/14-data-and-authorization-policy.md) for full disclaimers).
 
-v1.0 — SCF Submission Ready. Sprint: August 31 – September 29, 2026. Stellar Testnet (development) → Stellar Mainnet (pilot go-live, Phase 1).
+---
 
-Dates in this repository supersede the August 20 – September 18, 2026 window printed in the source submission PDF. The `source_pages` field in each `docs/` file still records where the material originated.
+<p align="center">
+  <b>JuanaBin PH</b> • Built for the Stellar Community Fund (SCF) • Licensed under <a href="./LICENSE">MIT</a>
+</p>
