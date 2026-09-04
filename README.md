@@ -45,10 +45,21 @@ A complete visual showcase of the JuanaBin PH platform — structured according 
 <summary>🌐 <b>Landing Page, Portal Summary & Contacts</b></summary>
 <br>
 
-| Official Landing Page | Portal Summary Data | Contacts & Support |
-| :---: | :---: | :---: |
-| <a href="https://juanabin-landing-page.vercel.app/" target="_blank"><img src="assets/landing-page.jpg" alt="JuanaBin PH Landing Page" width="100%"></a> | <img src="assets/summary-data.jpg" alt="Summary Data" width="100%"> | <img src="assets/contacts.jpg" alt="Contacts" width="100%"> |
-| *JuanaBin PH web portal home* | *Platform summary metrics & operational overview* | *Community portal contact & support section* |
+| Official Landing Page | Contacts & Support |
+| :---: | :---: |
+| <a href="https://juanabin-landing-page.vercel.app/" target="_blank"><img src="assets/landing-page.png" alt="JuanaBin PH Landing Page" width="100%"></a> | <img src="assets/contacts.png" alt="Contacts" width="100%"> |
+| *JuanaBin PH web portal home (Click to visit)* | *Community portal contact & support section* |
+
+</details>
+
+<details>
+<summary>📊 <b>Dashboard & Live Activity</b></summary>
+<br>
+
+| Dashboard | Live Activity |
+| :---: | :---: |
+| <img src="assets/dashboard.png" alt="Dashboard" width="100%"> | <img src="assets/live-activity.png" alt="Live Activity" width="100%"> |
+| *Real-time metrics & JBIN reward tracking* | *Publicly verifiable on-chain transactions* |
 
 </details>
 
@@ -56,10 +67,10 @@ A complete visual showcase of the JuanaBin PH platform — structured according 
 <summary>🤖 <b>Smart Bin Features & Hardware Integration</b></summary>
 <br>
 
-| Part 1: Smart Bin Overview | Part 2: Automated Segregation | Part 3: Sensor Array | Part 4: Real-time Status |
-| :---: | :---: | :---: | :---: |
-| <img src="assets/smartbin-features-1.jpg" alt="Smart Bin Features 1" width="100%"> | <img src="assets/smartbin-features-2.jpg" alt="Smart Bin Features 2" width="100%"> | <img src="assets/smartbin-features-3.jpg" alt="Smart Bin Features 3" width="100%"> | <img src="assets/smartbin-features-4.jpg" alt="Smart Bin Features 4" width="100%"> |
-| *Bin specs & UI* | *Servo & camera classification* | *Hardware telemetry* | *Capacity & fill-level monitoring* |
+| Part 1: Smart Bin Overview | Part 2: Automated Segregation | Part 3: Sensor Array |
+| :---: | :---: | :---: |
+| <img src="assets/smart-bin-features-1.jpg" alt="Smart Bin Features 1" width="100%"> | <img src="assets/smart-bin-features-2.jpg" alt="Smart Bin Features 2" width="100%"> | <img src="assets/smart-bin-features-3.jpg" alt="Smart Bin Features 3" width="100%"> |
+| *Bin specs & UI* | *Servo & camera classification* | *Hardware telemetry & status* |
 
 </details>
 
@@ -67,21 +78,10 @@ A complete visual showcase of the JuanaBin PH platform — structured according 
 <summary>♻️ <b>How JuanaBin Works (Operational Workflow)</b></summary>
 <br>
 
-| Step 1: Item Disposal | Step 2: AI Classification | Step 3: Reward Calculation | Step 4: Token Settlement |
-| :---: | :---: | :---: | :---: |
-| <img src="assets/how-juanabinph-works-1.jpg" alt="How JuanaBin Works 1" width="100%"> | <img src="assets/how-juanabinph-works-2.jpg" alt="How JuanaBin Works 2" width="100%"> | <img src="assets/how-juanabinph-works-3.jpg" alt="How JuanaBin Works 3" width="100%"> | <img src="assets/how-juanabinph-works-4.jpg" alt="How JuanaBin Works 4" width="100%"> |
-| *Resident waste submission* | *Automated material classification* | *Point system evaluation* | *Instant Stellar JBIN token transfer* |
-
-</details>
-
-<details>
-<summary>📊 <b>Live Smart Bin Activity & On-Chain Ledger</b></summary>
-<br>
-
-| Activity Monitor (Part 1) | Activity Monitor (Part 2) | Stellar Blockchain Anchor |
-| :---: | :---: | :---: |
-| <img src="assets/live-smartbin-1.jpg" alt="Live SmartBin Activity 1" width="100%"> | <img src="assets/live-smartbin-2.jpg" alt="Live SmartBin Activity 2" width="100%"> | <img src="assets/stellar-blockchain.jpg" alt="Stellar Blockchain Anchor" width="100%"> |
-| *Real-time disposal logs & activity feed* | *Verification hash stream* | *Publicly verifiable Horizon Testnet settlement* |
+| Step 1: Item Disposal | Step 2: AI Classification |
+| :---: | :---: |
+| <img src="assets/how-segregate-works-1.png" alt="How Segregate Works 1" width="100%"> | <img src="assets/how-segregate-works-2.png" alt="How Segregate Works 2" width="100%"> |
+| *Resident waste submission workflow* | *Classification rules & waste guidelines* |
 
 </details>
 
@@ -89,32 +89,32 @@ A complete visual showcase of the JuanaBin PH platform — structured according 
 <summary>🧮 <b>Segregate-to-Earn Point Calculator</b></summary>
 <br>
 
-| Calculator: Material Selection | Calculator: Yield Estimator | Calculator: Reward Summary |
+| Point Calculator |
+| :---: |
+| <img src="assets/calculator.png" alt="Calculator" width="100%"> |
+| *Interactive point estimator for waste segregation yields* |
+
+</details>
+
+<details>
+<summary>✨ <b>Functions, Ecosystem Benefits & Why Stellar</b></summary>
+<br>
+
+| Functions & Benefits | Why Stellar? | Compliance & Policy |
 | :---: | :---: | :---: |
-| <img src="assets/calculator-1.jpg" alt="Calculator 1" width="100%"> | <img src="assets/calculator-2.jpg" alt="Calculator 2" width="100%"> | <img src="assets/calculator-3.jpg" alt="Calculator 3" width="100%"> |
-| *PET bottle & sachet input* | *JBIN token point calculation* | *Daily cap & redemption breakdown* |
+| <img src="assets/function-and-benefits-1.jpg" alt="Functions and Benefits" width="100%"> | <img src="assets/why-juanabin-ph.png" alt="Why Stellar" width="100%"> | <img src="assets/compliance.png" alt="Compliance" width="100%"> |
+| *Ecosystem benefits for households & LGUs* | *Fast micro-payments via Stellar Horizon Testnet* | *Data privacy & security compliance* |
 
 </details>
 
 <details>
-<summary>✨ <b>Why JuanaBin, Functions & Ecosystem Benefits</b></summary>
+<summary>🛡️ <b>FAQs</b></summary>
 <br>
 
-| Why JuanaBin (Vision) | Why JuanaBin (Impact) | Functions & Benefits (Part 1) | Functions & Benefits (Part 2) |
-| :---: | :---: | :---: | :---: |
-| <img src="assets/why-juanabin-1.jpg" alt="Why JuanaBin 1" width="100%"> | <img src="assets/why-juanabin-2.jpg" alt="Why JuanaBin 2" width="100%"> | <img src="assets/function-1.jpg" alt="Functions 1" width="100%"> | <img src="assets/function-2.jpg" alt="Functions 2" width="100%"> |
-| *Philippine waste challenges* | *Economic incentives model* | *LGU & Barangay benefits* | *Household waste management ROI* |
-
-</details>
-
-<details>
-<summary>🛡️ <b>Compliance, Security & FAQs</b></summary>
-<br>
-
-| Platform Compliance | Frequently Asked Questions |
-| :---: | :---: |
-| <img src="assets/compliance.jpg" alt="Compliance" width="100%"> | <img src="assets/faq.jpg" alt="FAQ" width="100%"> |
-| *Data privacy, off-chain logic, and LGU policy alignment* | *Common user, developer, and auditor inquiries* |
+| Frequently Asked Questions |
+| :---: |
+| <img src="assets/faq.png" alt="FAQ" width="100%"> |
+| *Common user, developer, and auditor inquiries* |
 
 </details>
 
