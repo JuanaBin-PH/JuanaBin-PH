@@ -34,6 +34,8 @@
 
 > [!IMPORTANT]
 > **JuanaBin PH** is in active development (Alpha Testnet Phase). The system connects camera-based waste classification endpoints with hardware servo controls, FastAPI endpoints, PostgreSQL data persistence, and automated Stellar Horizon Testnet reward token anchoring (`JBIN`).
+> 
+> <mark>💡 **Project Origin & Heritage:** JuanaBin PH was conceptualized in 2013, starting as a digital trash bin project named **Buslo ng Pag-asa**, before evolving into today's AI-powered, Stellar-anchored smart waste segregation ecosystem.</mark>
 
 ---
 
@@ -117,11 +119,6 @@ A complete visual showcase of the JuanaBin PH platform — structured according 
 | *Data protection & off-chain privacy* | *Auditability & LGU policy alignment* | *Common user & developer inquiries* |
 
 </details>
-
----
-
-> 💡 **Project Heritage & Origin**
-> **JuanaBin PH** was originally conceptualized in 2013, starting as a digital trash bin initiative named **Buslo ng Pag-asa**, before evolving into today's AI-powered, Stellar-anchored waste segregation and rewards ecosystem.
 
 ---
 
