@@ -120,6 +120,11 @@ A complete visual showcase of the JuanaBin PH platform — structured according 
 
 ---
 
+> 💡 **Project Heritage & Origin**
+> **JuanaBin PH** was originally conceptualized in 2013, starting as a digital trash bin initiative named **Buslo ng Pag-asa**, before evolving into today's AI-powered, Stellar-anchored waste segregation and rewards ecosystem.
+
+---
+
 ## 🧩 Why JuanaBin PH
 
 **Waste → Wallet → Product | Segregate-to-Earn on Stellar**
